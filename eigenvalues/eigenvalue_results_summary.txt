@@ -1,0 +1,117 @@
+EIGENVALUE ANALYSIS RESULTS
+============================================================
+
+
+Matrix: bcsstk16
+Dimensions: 4884 × 4884
+Non-zero elements: 290378
+Sparsity: 1.217341%
+Symmetric: True
+
+Reference eigenvalues (SciPy):
+  Dominant λ: 4.943166e+09
+  λ near σ=10.0: 1.000000e+00
+
+Power Method:
+  λ: 4.943166e+09
+  Iterations: 115
+  Time: 0.1074s
+  Final error: 3.86e-16
+
+Inverse Power Method (σ=10.0):
+  λ: 1.000000e+00
+  Iterations: 3
+  Time: 0.1448s
+  Final error: 1.78e-15
+
+Krylov Subspace Method (Lanczos):
+  λ_1: 4.943166e+09
+  λ_2: 4.943166e+09
+  λ_3: 4.085364e+09
+  λ_4: 3.736415e+09
+  λ_5: 3.719877e+09
+  Iterations: 50
+  Time: 0.2140s
+
+QR Iteration Speed Comparison:
+  Without shift: 20000 iterations
+  With Wilkinson shift: 301 iterations
+  Speedup: 66.45x
+
+------------------------------------------------------------
+
+Matrix: fpga_dcop_17
+Dimensions: 1220 × 1220
+Non-zero elements: 5892
+Sparsity: 0.395861%
+Symmetric: False
+
+Reference eigenvalues (SciPy):
+  Dominant λ: 3.733803e+00+0.000000e+00j
+  λ near σ=0.5: 5.454545e-01+0.000000e+00j
+
+Power Method:
+  λ: 3.733803e+00
+  Iterations: 40
+  Time: 0.0022s
+  Final error: 3.84e-09
+
+Inverse Power Method (σ=0.5):
+  λ: 5.454599e-01
+  Iterations: 850
+  Time: 0.1131s
+  Final error: 9.82e-06
+
+Krylov Subspace Method (Arnoldi):
+  λ_1: 3.733803e+00
+  λ_2: 3.018779e+00
+  λ_3: 2.985644e+00
+  λ_4: 2.871668e+00
+  λ_5: 2.871651e+00
+  Iterations: 50
+  Time: 0.1689s
+
+QR Iteration Speed Comparison:
+  Without shift: 20000 iterations
+  With Wilkinson shift: 255 iterations
+  Speedup: 78.43x
+
+------------------------------------------------------------
+
+Matrix: FEM_3D_thermal2
+Dimensions: 147900 × 147900
+Non-zero elements: 3489300
+Sparsity: 0.015952%
+Symmetric: True
+
+Reference eigenvalues (SciPy):
+  Dominant λ: 5.912683e-01
+  λ near σ=0.01: 1.000015e-02
+
+Power Method:
+  λ: 5.912681e-01
+  Iterations: 167
+  Time: 1.6933s
+  Final error: 2.56e-07
+
+Inverse Power Method (σ=0.01):
+  λ: 1.000014e-02
+  Iterations: 3
+  Time: 36.0353s
+  Final error: 1.67e-06
+
+Krylov Subspace Method (Lanczos):
+  λ_1: 5.912683e-01
+  λ_2: 5.738430e-01
+  λ_3: 5.709151e-01
+  λ_4: 5.650698e-01
+  λ_5: 5.441597e-01
+  Iterations: 50
+  Time: 0.4988s
+
+QR Iteration Speed Comparison:
+  Without shift: 9434 iterations
+  With Wilkinson shift: 284 iterations
+  Speedup: 33.22x
+
+------------------------------------------------------------
